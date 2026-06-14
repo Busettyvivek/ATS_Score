@@ -1,0 +1,30 @@
+.resume-preview-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.resume-preview-card h3 {
+  margin-bottom: 20px;
+}
+
+.resume-frame {
+  width: 100%;
+  height: 1200px;
+
+  border: none;
+  border-radius: 12px;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .left-panel {
+    position: static;
+  }
+}

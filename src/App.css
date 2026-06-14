@@ -1,0 +1,41 @@
+.dashboard-layout {
+  width: 95%;
+  margin: 30px auto;
+
+  display: grid;
+  grid-template-columns: 40% 60%;
+
+  gap: 24px;
+
+  align-items: start;
+}
+
+.left-panel {
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+.right-panel {
+  width: 100%;
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+  .dashboard-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .left-panel {
+    position: static;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .dashboard-layout {
+    display: block;
+  }
+}
